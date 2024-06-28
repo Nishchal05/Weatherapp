@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, lightgray, lightblue);
+}
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+h1{
+    font-size: 2.5rem;
+}
+main{
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1{
+    height: 350px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right,#00e677,rgba(128, 0, 128, 0.463));
+    position: relative;
+    box-shadow: 3px 3px gray, -1em 0 .4em gray;
+    gap: 30px;
+}
+.wave{
+    height: 400px;
+    width: 450px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+    animation: rotation 4s linear infinite;
+    z-index: -1;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.weather-icon{
+    font-size: 3rem;
+    color: rgb(255, 255, 0);
+}
+.weather-input{
+    display: flex;
+    gap: 10px;
+}
+.weather-input input{
+    border-radius: 27px;
+    padding: 6px;
+    border: none;
+}
+.weather-input button{
+    border: none;
+    padding: 7px;
+    border-radius: 27px;
+    background-color: white;
+}
+.contain-data{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+.contain-data div{
+display: flex;
+}
+.humidity-windspeed{
+    gap: 20px;
+}
