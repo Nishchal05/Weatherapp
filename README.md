@@ -1,2 +1,2 @@
 # Weatherapp
-building a weatherapp with html,css and js
+Building a weatherapp with html,css and js
